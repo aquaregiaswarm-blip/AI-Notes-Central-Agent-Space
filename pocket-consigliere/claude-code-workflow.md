@@ -155,6 +155,36 @@ Epic 3: Speech-to-Text - Whisper.cpp integration, GPU acceleration
 
 ---
 
+### Step 6: First Run Validation
+
+**After tests pass:**
+
+**Claude suggests:** "Now let's try running the app with `npm run dev`"
+
+**What happened:**
+1. Ran dev server (`npm run dev`)
+2. **Error occurred** (runtime issue not caught by tests)
+3. **Claude diagnosed the issue** (explained what was wrong)
+4. **Claude fixed the error** (code change, config update, or missing dependency)
+5. **Re-ran `npm run dev`** (confirmed app launches successfully)
+6. **Committed fix** (final validation checkpoint)
+
+**Example error scenarios:**
+- Missing environment variable (app crashes on startup)
+- Incorrect webpack/vite config (bundle fails to load)
+- Missing dependency in package.json (module not found)
+- Port already in use (dev server won't start)
+
+**Why this matters:**
+- ✅ Tests can pass but app might not launch (config issues, runtime-only errors)
+- ✅ Validates entire build pipeline (not just individual modules)
+- ✅ Catches "works in test, breaks in reality" issues
+- ✅ Final validation before human QA
+
+**Key insight:** Running the actual app is the ultimate integration test.
+
+---
+
 ## Key Insights
 
 ### 1. **Plan Mode is Critical**
@@ -222,6 +252,11 @@ Epic 3: Speech-to-Text - Whisper.cpp integration, GPU acceleration
    - Tests written during implementation (correct context)
    - Full suite run at end catches integration issues
 
+6. **First run validation caught runtime issues**
+   - `npm run dev` revealed errors tests didn't catch
+   - Claude diagnosed and fixed automatically
+   - Final validation before human QA
+
 ### ⚠️ What Could Be Improved
 
 1. **Test execution strategy**
@@ -264,7 +299,18 @@ Epic 3: Speech-to-Text - Whisper.cpp integration, GPU acceleration
 3. Fix any failures
 4. Commit final checkpoint
 
-### Phase 5: Manual QA
+### Phase 5: First Run Validation
+1. **Claude suggests:** "Now let's try running the app with `npm run dev`"
+2. Run the dev server (first time launching the actual app)
+3. **If error occurs:** Claude diagnoses and fixes
+4. Commit fix (if needed)
+
+**Why this matters:**
+- Tests can pass but app might not launch (config issues, missing deps)
+- Runtime errors surface that tests don't catch
+- Validates entire build pipeline (not just individual modules)
+
+### Phase 6: Manual QA
 1. Launch app manually (not just tests)
 2. Smoke test critical paths (happy path + edge cases)
 3. Document any issues for follow-up
