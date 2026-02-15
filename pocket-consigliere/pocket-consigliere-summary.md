@@ -1,4 +1,4 @@
-# Meeting Copilot — Application Summary
+# Pocket Consigliere — Application Summary
 **Version:** 0.1 (Draft)
 **Date:** 2026-02-14
 
@@ -6,7 +6,7 @@
 
 ## What Is It?
 
-Meeting Copilot is a **local desktop application** that listens to your meetings in real time — virtual or in-person — and acts as a silent strategic advisor. It transcribes the conversation, feeds it to an AI reasoning model along with client history and your product catalog, and surfaces smart questions, talking points, and contextual notes while you're still on the call.
+Pocket Consigliere is a **local desktop application** that listens to your meetings in real time — virtual or in-person — and acts as a silent strategic advisor. It transcribes the conversation, feeds it to an AI reasoning model along with client history and your product catalog, and surfaces smart questions, talking points, and contextual notes while you're still on the call.
 
 After the meeting, it generates a full transcript, structured summary, action items, and suggested updates to your client records — all without sending a single thing to the cloud that you don't explicitly configure.
 
@@ -112,5 +112,5 @@ Roy Bales and Jonathan Gough — technology consultants and Field CTOs at a valu
 ---
 
 *See also:*
-- *Full requirements: `meeting-copilot-requirements.md`*
-- *Ideation transcript: `transcripts/2026-02-14-meeting-copilot-ideation.md`*
+- *Full requirements: `pocket-consigliere-requirements.md`*
+- *Ideation transcript: `transcripts/2026-02-14-pocket-consigliere-ideation.md`*

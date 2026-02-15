@@ -1,4 +1,4 @@
-# Meeting Copilot — V1 Implementation Plan
+# Pocket Consigliere — V1 Implementation Plan
 **Version:** 0.1  
 **Date:** 2026-02-14  
 **Status:** Planning  
@@ -7,7 +7,7 @@
 
 ## Overview
 
-This document breaks down the Meeting Copilot V1 epics and stories into concrete tasks, subtasks, test plans, and dependency maps. Every story includes:
+This document breaks down the Pocket Consigliere V1 epics and stories into concrete tasks, subtasks, test plans, and dependency maps. Every story includes:
 - **Tasks & Subtasks** — granular work items
 - **Test Plans** — unit, functional, integration, and E2E tests
 - **Dependencies & Blockers** — what must be done first
