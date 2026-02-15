@@ -1,4 +1,4 @@
-# Meeting Copilot — Ideation Session Transcript
+# Pocket Consigliere — Ideation Session Transcript
 **Date:** 2026-02-14
 **Participants:** Jonathan Gough, Roy Bales, Clarice (AI)
 **Channel:** Clarice's Hangout (Telegram)
@@ -352,7 +352,7 @@ Great question from Jonathan — let me put together a thorough architectural br
 
 ---
 
-## 🏗️ Architecture Breakdown: Local-Only Meeting Copilot
+## 🏗️ Architecture Breakdown: Local-Only Pocket Consigliere
 
 ### **The Core Pipeline**
 At its simplest, this app has 4 stages running in parallel:
@@ -873,7 +873,7 @@ Here's what I'll capture:
 
 ---
 
-**📋 PROJECT BRIEF: Real-Time Meeting Copilot (Working Title TBD)**
+**📋 PROJECT BRIEF: Real-Time Pocket Consigliere (Working Title TBD)**
 
 **Persona & Users:** Roy and Jonathan only (V1). High-end consultants / thought leaders speaking with mid-to-senior client stakeholders. Internal tool, no external users for now.
 
@@ -996,14 +996,14 @@ All three done. Here's what I produced:
 
 ---
 
-**1. Detailed Requirements Document** → `meeting-copilot-requirements.md`
+**1. Detailed Requirements Document** → `pocket-consigliere-requirements.md`
 - 10 sections covering: overview, target users, platform, all functional requirements (STT, LLM, UI, knowledge base, auto-prep, post-meeting artifacts), data storage, configuration, non-functional requirements, explicit out-of-scope items, complexity assessment (🟢🟡🔴⛰️), and recommended tech stack.
 
-**2. Application Summary** → `meeting-copilot-summary.md`
+**2. Application Summary** → `pocket-consigliere-summary.md`
 - Plain-English feature walkthrough organized by capability area, what it does NOT do (and why), complexity at a glance, and a one-line pitch:
 > *"A private, local AI copilot that listens to your meetings, knows your clients, and whispers the right questions in your ear — then writes up the notes when you're done."*
 
-**3. Full Transcript** → `transcripts/2026-02-14-meeting-copilot-ideation.md`
+**3. Full Transcript** → `transcripts/2026-02-14-pocket-consigliere-ideation.md`
 - Complete chronological record of the entire ideation conversation between Jonathan, Roy, and myself.
 
 I also updated the **ideation log** in memory so I don't lose context on this project.
@@ -1028,27 +1028,27 @@ Got it, Roy. You want the three documents pushed to the **AI-Notes-Central-Agent
 ---
 
 **Clarice:**
-[Running: cd /tmp/AI-Notes-Central-Agent-Space && git checkout -b meeting-copilot-ideation]
+[Running: cd /tmp/AI-Notes-Central-Agent-Space && git checkout -b pocket-consigliere-ideation]
 
 ---
 
 **Clarice:**
-[Running: cp /home/ubuntu/.openclaw/workspace/meeting-copilot-requirements.md /tmp/AI-Note]
+[Running: cp /home/ubuntu/.openclaw/workspace/pocket-consigliere-requirements.md /tmp/AI-Note]
 
 ---
 
 **Clarice:**
-[Running: cd /tmp/AI-Notes-Central-Agent-Space && ls -R meeting-copilot/]
+[Running: cd /tmp/AI-Notes-Central-Agent-Space && ls -R pocket-consigliere/]
 
 ---
 
 **Clarice:**
-[Running: cd /tmp/AI-Notes-Central-Agent-Space && git add meeting-copilot/ && git commit -]
+[Running: cd /tmp/AI-Notes-Central-Agent-Space && git add pocket-consigliere/ && git commit -]
 
 ---
 
 **Clarice:**
-[Running: cd /tmp/AI-Notes-Central-Agent-Space && git push origin meeting-copilot-ideation]
+[Running: cd /tmp/AI-Notes-Central-Agent-Space && git push origin pocket-consigliere-ideation]
 
 ---
 
@@ -1076,11 +1076,11 @@ Got it, Roy. You want the three documents pushed to the **AI-Notes-Central-Agent
 **Clarice:**
 Done. Here's what I did:
 
-1. **Created the branch** `meeting-copilot-ideation` on the shared repo
-2. **Added 3 documents** under a new `meeting-copilot/` directory:
-   - `meeting-copilot-requirements.md` — detailed requirements doc (platform, STT, LLM, UI, knowledge base, post-meeting artifacts, data storage, complexity assessment, recommended tech stack)
-   - `meeting-copilot-summary.md` — clean feature summary with the one-liner pitch
-   - `transcripts/2026-02-14-meeting-copilot-ideation.md` — full transcript of today's session
+1. **Created the branch** `pocket-consigliere-ideation` on the shared repo
+2. **Added 3 documents** under a new `pocket-consigliere/` directory:
+   - `pocket-consigliere-requirements.md` — detailed requirements doc (platform, STT, LLM, UI, knowledge base, post-meeting artifacts, data storage, complexity assessment, recommended tech stack)
+   - `pocket-consigliere-summary.md` — clean feature summary with the one-liner pitch
+   - `transcripts/2026-02-14-pocket-consigliere-ideation.md` — full transcript of today's session
 3. **Opened PR #1:** [github.com/aquaregiaswarm-blip/AI-Notes-Central-Agent-Space/pull/1](https://github.com/aquaregiaswarm-blip/AI-Notes-Central-Agent-Space/pull/1)
 
 Waiting for one of you to review and merge. 🗲
@@ -1102,7 +1102,7 @@ Alright Jonathan, here's the full epic and story breakdown. I went deep on this 
 
 ---
 
-# Meeting Copilot — V1 Epics & Stories
+# Pocket Consigliere — V1 Epics & Stories
 
 ## Dependency Map (Build Order)
 

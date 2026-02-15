@@ -8,7 +8,7 @@
 
 ## Overview
 
-This methodology transforms a raw application idea into a complete implementation plan through structured Q&A, iterative refinement, and progressive detail expansion. It was developed during the Meeting Copilot ideation session and captures Jonathan Gough's approach to product scoping.
+This methodology transforms a raw application idea into a complete implementation plan through structured Q&A, iterative refinement, and progressive detail expansion. It was developed during the Pocket Consigliere ideation session and captures Jonathan Gough's approach to product scoping.
 
 **Key Principle:** "We're not building anything yet. Your job is to ask us questions about the application — how it would work, what functionality we need, what we don't need — so we can fully scope out if we want to do this and how we would do it."
 
@@ -31,7 +31,7 @@ Understand the core idea without judgment or premature solution design.
 - What does success look like from their perspective?
 - Are there existing solutions they've tried? What's missing?
 
-### Example from Meeting Copilot
+### Example from Pocket Consigliere
 - **Idea:** Real-time AI meeting copilot for consultants
 - **Users:** Jonathan & Roy (v1), high-end consultants talking to senior client stakeholders
 - **Problem:** Need strategic guidance during client meetings without visible prompts or delays
@@ -100,7 +100,7 @@ Flesh out functionality, UI/UX, data model, and scope through deliberate Q&A.
 - What's the "easy button" version?
 - What's the complexity ceiling before it becomes unmaintainable?
 
-### Example Questions from Meeting Copilot
+### Example Questions from Pocket Consigliere
 
 1. Who is the target user? → Jonathan & Roy (v1 only)
 2. How should the output be consumed during a live call? → Overlay/sidebar
@@ -138,7 +138,7 @@ Does this match your vision? Anything I've misunderstood?
 - Demonstrates active listening
 - Creates checkpoints for scope evolution
 
-### Example from Meeting Copilot
+### Example from Pocket Consigliere
 After question 5, Clarice synthesized:
 > **Concept:** Real-time meeting copilot (Electron on Mac)  
 > **Flow:** Audio → STT → LLM (every ~60s) → suggestions  
@@ -224,7 +224,7 @@ Present the artifacts back to the product owner for review and iteration.
 4. **Re-present** → confirm alignment
 5. **Lock scope** → move to implementation
 
-### Example from Meeting Copilot
+### Example from Pocket Consigliere
 After the initial epic/story draft, Jonathan requested:
 > "For each epic, create tasks and subtasks for every story. Outline all necessary unit tests, functional tests, integration tests, and end-to-end tests. Outline dependencies/blockers/etc."
 
@@ -436,6 +436,6 @@ The best ideation sessions feel like conversations, not interrogations. The ques
 
 ---
 
-*Captured from Meeting Copilot ideation session (2026-02-14)*  
+*Captured from Pocket Consigliere ideation session (2026-02-14)*  
 *Participants: Jonathan Gough, Roy Bales, Clarice*  
-*See: `meeting-copilot/transcripts/2026-02-14-meeting-copilot-ideation.md`*
+*See: `pocket-consigliere/transcripts/2026-02-14-pocket-consigliere-ideation.md`*

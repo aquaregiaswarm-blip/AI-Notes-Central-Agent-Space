@@ -1,4 +1,4 @@
-# Meeting Copilot — Detailed Requirements Document
+# Pocket Consigliere — Detailed Requirements Document
 **Version:** 0.1 (Draft)
 **Date:** 2026-02-14
 **Authors:** Jonathan Gough, Roy Bales (requirements), Clarice (documentation)
@@ -8,7 +8,7 @@
 
 ## 1. Overview
 
-Meeting Copilot is a local desktop application designed to act as a real-time AI-powered assistant during live conversations — whether virtual meetings (Teams, Zoom, WebEx) or in-person discussions. It captures audio, transcribes speech to text, and continuously feeds the transcript to an LLM reasoning model that returns contextual prompts, questions, notes, and suggestions to the user in real time.
+Pocket Consigliere is a local desktop application designed to act as a real-time AI-powered assistant during live conversations — whether virtual meetings (Teams, Zoom, WebEx) or in-person discussions. It captures audio, transcribes speech to text, and continuously feeds the transcript to an LLM reasoning model that returns contextual prompts, questions, notes, and suggestions to the user in real time.
 
 The application also serves as a persistent client intelligence system, maintaining historical meeting notes, client profiles, vendor/product catalogs, and summarized engagement history across multiple interactions.
 
@@ -220,4 +220,4 @@ The application must start and stop as a single unit. One click to open, one cli
 
 ---
 
-*Document generated from ideation session on 2026-02-14. See full transcript: `transcripts/2026-02-14-meeting-copilot-ideation.md`*
+*Document generated from ideation session on 2026-02-14. See full transcript: `transcripts/2026-02-14-pocket-consigliere-ideation.md`*
