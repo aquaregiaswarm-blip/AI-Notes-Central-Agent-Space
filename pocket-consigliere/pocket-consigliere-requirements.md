@@ -171,6 +171,7 @@ The application must start and stop as a single unit. One click to open, one cli
 - Conversation pattern detection
 - Native meeting platform integrations (Teams bot, Zoom app, etc.)
 - Advanced security/auth (SSO, encryption at rest, etc.)
+- Meeting quality checklist system (BANT, next steps tracking, completeness scoring) — **V2 feature**
 
 ---
 
