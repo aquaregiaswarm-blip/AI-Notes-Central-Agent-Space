@@ -251,6 +251,109 @@ Document the process itself so it can be reused.
 
 ---
 
+## Phase 7: Generate AI Assistant Instructions (NEW)
+
+### Objective
+Create setup instructions for AI coding assistants (Claude Code, Cursor, GitHub Copilot) so they can implement the project with full context.
+
+### What to Generate
+A `CLAUDE.md` (or `.ai/INSTRUCTIONS.md`) file that includes:
+1. **Project overview** (2-3 paragraphs: what, why, who, success criteria)
+2. **Architecture summary** (key decisions + rationale)
+3. **Tech stack** (with "why chosen" for each major component)
+4. **Epic sequence** (build order with dependencies)
+5. **Critical gotchas** (things that will break if not handled correctly)
+6. **Test strategy** (when to test, performance targets)
+7. **File structure** (where to find planning docs)
+8. **Development workflow** (how to get started)
+9. **Clarifying questions** (common ambiguities resolved upfront)
+
+### Template
+Use `templates/CLAUDE.md.template` as starting point.
+
+### When to Generate
+**After** all planning artifacts are complete:
+- Requirements ✅
+- Charter ✅
+- Architecture ✅
+- Epics & Stories ✅
+- Implementation Plan ✅
+
+### Why This Matters
+- **Maximum context available:** Planning session has full context fresh in memory
+- **Standardized handoff:** AI assistants start with complete understanding
+- **No cold start:** Developer clones repo, AI reads CLAUDE.md, ready to build
+- **Alignment:** AI instructions match planning artifacts (no drift)
+- **Iterative improvement:** Template evolves as we learn what works
+
+### Example Section (Epic Sequence)
+
+```markdown
+## Epic Sequence (Build Order)
+
+**IMPORTANT:** Build in this order. Dependencies are critical.
+
+| Epic | Priority | Why First | Blockers |
+|------|----------|-----------|----------|
+| Epic 0: Week 1 POC | **CRITICAL** | Go/no-go validation of audio+STT+LLM chain | None |
+| Epic 1: Foundation | Must-have | Electron app scaffold, all other epics depend on this | Epic 0 |
+| Epic 2: Audio Capture | Must-have | Rust addon must work before STT | Epic 1 |
+| Epic 3: STT | Must-have | Needs audio capture functional | Epic 2 |
+
+**After each Epic:**
+- ✅ Run tests for that Epic
+- ✅ Commit and push (checkpoint)
+- ✅ Ask: "Epic [N] complete. Ready for Epic [N+1]?"
+```
+
+### Integration with Planning Session
+
+**At end of planning session, facilitator asks:**
+> "Let's generate AI assistant instructions (CLAUDE.md) so this project can be implemented by Claude Code or Cursor."
+
+**Then:**
+1. Use template as starting point
+2. Fill in sections based on planning artifacts
+3. Highlight critical gotchas from risk analysis
+4. Define Epic sequence with dependencies
+5. Save as `CLAUDE.md` or `.ai/INSTRUCTIONS.md`
+6. Commit with planning artifacts
+
+### Benefits Over "Claude /init"
+
+**Traditional approach:** Developer runs `/init`, Claude inspects repo, generates understanding
+
+**Problem:**
+- Claude's understanding might diverge from planning intent
+- No standardized format (each Claude.md is different)
+- Misses context from planning session (verbal decisions not in docs)
+
+**New approach:** Generate instructions during planning
+
+**Benefits:**
+- ✅ Planning context captured while fresh
+- ✅ Standardized format (template-based)
+- ✅ Verbal decisions documented
+- ✅ AI starts with correct understanding (no drift)
+- ✅ Template improves over time (organizational learning)
+
+### What Goes in CLAUDE.md vs Other Docs
+
+**CLAUDE.md:** AI assistant-specific guidance
+- Build order (Epic sequence)
+- Common pitfalls (gotchas)
+- Workflow (how to commit, when to test)
+- Clarifications (resolve ambiguities)
+
+**Other docs:** Detailed specifications
+- Requirements: What to build
+- Architecture: How it's designed
+- Implementation Plan: Detailed tasks
+
+**Think of CLAUDE.md as the "getting started guide for AI assistants"** — it references detailed docs but doesn't replace them.
+
+---
+
 ## Key Principles (Distilled)
 
 ### 1. **"No Less Than 10 Questions, One at a Time"**

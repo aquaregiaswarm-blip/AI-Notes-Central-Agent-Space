@@ -1,0 +1,245 @@
+# [Project Name] - AI Assistant Instructions
+
+**Generated:** [Date]  
+**Planning Session:** [Link to planning session transcript]  
+**For:** Claude Code, Cursor, GitHub Copilot  
+
+---
+
+## Project Overview
+
+[2-3 paragraph summary of what this project is and why it exists]
+
+**Key goals:**
+- [Goal 1]
+- [Goal 2]
+- [Goal 3]
+
+**Target users:** [Who is this for?]
+
+**Success criteria:** [What does "done" look like?]
+
+---
+
+## Architecture Summary
+
+**Approach:** [High-level architecture description]
+
+**Key decisions:**
+- [Decision 1 + rationale]
+- [Decision 2 + rationale]
+- [Decision 3 + rationale]
+
+**Critical constraints:**
+- [Constraint 1]
+- [Constraint 2]
+
+**Non-negotiables:**
+- [What must not change]
+
+---
+
+## Tech Stack
+
+**Frontend:**
+- [Framework] - [Why chosen]
+- [UI library] - [Why chosen]
+
+**Backend:**
+- [Runtime/framework] - [Why chosen]
+- [Database] - [Why chosen]
+
+**Special components:**
+- [Component 1] - [Purpose + approach]
+- [Component 2] - [Purpose + approach]
+
+**Dependencies:**
+- [Critical dependency 1]
+- [Critical dependency 2]
+
+---
+
+## Epic Sequence (Build Order)
+
+**IMPORTANT:** Build in this order. Dependencies are critical.
+
+| Epic | Priority | Why First | Blockers |
+|------|----------|-----------|----------|
+| Epic 0: [Name] | **CRITICAL** | [Reason - e.g., "Go/no-go validation"] | None |
+| Epic 1: [Name] | Must-have | [Reason - e.g., "Foundation for everything else"] | Epic 0 |
+| Epic 2: [Name] | Must-have | [Reason] | Epic 1 |
+| Epic 3: [Name] | Must-have | [Reason] | Epic 1, 2 |
+| ... | ... | ... | ... |
+
+**After each Epic:**
+- ✅ Run tests for that Epic
+- ✅ Commit and push (checkpoint)
+- ✅ Ask: "Epic [N] complete. Ready for Epic [N+1]?"
+
+---
+
+## Implementation Strategy
+
+### Phase 1: Proof of Concept (Epic 0)
+**Goal:** [What needs validation]  
+**Timeline:** [Estimate]  
+**Go/No-Go Decision:** [What happens if POC fails]
+
+### Phase 2: Foundation (Epic 1)
+**Goal:** [Core infrastructure]  
+**Deliverables:** [Key files/modules]
+
+### Phase 3-N: Feature Implementation
+[Brief description of remaining epics]
+
+---
+
+## Critical Gotchas (Things That Will Break)
+
+### 1. [Gotcha 1 Name]
+**Problem:** [What will go wrong]  
+**Mitigation:** [How to prevent/fix]  
+**Where it matters:** [Which Epic]
+
+### 2. [Gotcha 2 Name]
+**Problem:** [What will go wrong]  
+**Mitigation:** [How to prevent/fix]  
+**Where it matters:** [Which Epic]
+
+[Continue for all major gotchas identified in risk analysis]
+
+---
+
+## Test Strategy
+
+**Test after each Epic:**
+- Unit tests (module-level)
+- Functional tests (feature-level)
+- Integration tests (cross-module)
+
+**Test at end (after all Epics):**
+- Full test suite
+- First run validation (`npm run dev` or equivalent)
+- Manual QA (smoke test critical paths)
+
+**Performance targets:**
+- [Metric 1]: [Target value]
+- [Metric 2]: [Target value]
+
+**Test coverage goals:**
+- [Coverage target, e.g., ">80% for business logic"]
+
+---
+
+## File Structure
+
+**Key directories:**
+```
+project-root/
+├── src/
+│   ├── main/          # [Purpose]
+│   ├── renderer/      # [Purpose]
+│   └── shared/        # [Purpose]
+├── tests/             # [Test organization]
+├── docs/              # [Documentation]
+└── [other dirs]
+```
+
+**Where to find things:**
+- Requirements: `[path/to/requirements.md]`
+- Architecture: `[path/to/ARCHITECTURE.md]`
+- Implementation plan: `[path/to/implementation-plan.md]`
+- Epics & stories: `[path/to/epics-stories.md]`
+
+---
+
+## Development Workflow
+
+### 1. Start Building
+```bash
+# Clone repo
+git clone [repo-url]
+cd [project-dir]
+
+# Install dependencies
+npm install  # or yarn, pnpm, etc.
+
+# Set up environment
+cp .env.example .env  # if applicable
+```
+
+### 2. Implement Epic
+- Read Epic goals from implementation plan
+- Implement tasks → subtasks
+- Write tests alongside code
+- Run tests for completed Epic
+
+### 3. Checkpoint
+```bash
+git add .
+git commit -m "Epic [N]: [Epic Name] - [Brief summary]"
+git push
+```
+
+### 4. Validation
+After all Epics:
+```bash
+npm test           # Run full test suite
+npm run dev        # First run validation
+```
+
+---
+
+## Clarifying Questions (Common Ambiguities)
+
+**If you're unsure about:**
+- [Common ambiguity 1]: [Guidance]
+- [Common ambiguity 2]: [Guidance]
+- [Common ambiguity 3]: [Guidance]
+
+**When in doubt:**
+- Check implementation plan for detailed subtasks
+- Refer to architecture doc for design decisions
+- Ask developer before making assumptions
+
+---
+
+## Success Checklist
+
+Before marking project complete:
+- [ ] All Epics implemented (check epics-stories.md)
+- [ ] Full test suite passes
+- [ ] App runs successfully (`npm run dev`)
+- [ ] Performance targets met (see Test Strategy)
+- [ ] Manual QA completed (smoke tests pass)
+- [ ] Documentation updated (README, API docs if applicable)
+- [ ] No critical TODOs left in codebase
+
+---
+
+## Related Documents
+
+- [Requirements](../[project-name]-requirements.md)
+- [Architecture](../ARCHITECTURE.md)
+- [Epics & Stories](../epics-stories.md)
+- [Implementation Plan](../[project-name]-implementation-plan.md)
+- [Risk Analysis](../risk-considerations.md) (if exists)
+
+---
+
+## Notes for AI Assistants
+
+**Plan mode recommended:** This project has clear Epic sequencing. Use plan mode to respect dependencies.
+
+**Commit frequency:** Commit after every Epic (not every subtask). This creates clear checkpoints.
+
+**Test execution:** Write tests during Epic implementation, run full suite at end.
+
+**First run validation:** After tests pass, suggest running the app (`npm run dev`). This catches config issues tests miss.
+
+**Error handling:** If errors occur, diagnose and fix autonomously when possible. Escalate if uncertain about fix impact.
+
+---
+
+**Generated from planning session:** [Date]  
+**Last updated:** [Date]
